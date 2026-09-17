@@ -78,7 +78,7 @@ The project uses:
 
 Base model:
 
-'openai/clip-vit-base-patch32'
+`openai/clip-vit-base-patch32`
 
 The pretrained CLIP model contains separate image and text encoders that project both modalities into a shared embedding space.
 
@@ -117,37 +117,53 @@ A subset of 5,000 training images was used for fine-tuning due to computational 
 
 In addition to numerical metrics, retrieved results are inspected visually.
 
-**Text → Image retrieval**
+### Text → Image retrieval
 
-### Successful case
+**Successful case**
 
 <p align="center">
-  <img src="images/text-to-image/perfect/caption_0.png" width="900">
+  <img src="images/text_to_image/perfect/caption_0.png" width="900">
 </p>
 
-### Partially correct case
+**Partially correct case**
 
 <p align="center">
-  <img src="images/text-to-image/hard/caption_1.png" width="900">
+  <img src="images/text_to_image/hard/caption_1.png" width="900">
 </p>
 
-**Image → Text Retrieval**
+### Image → Text Retrieval**
 
-### Successful case
+**Successful case**
 
 <p align="center">
-  <img src="images/image-to-text/perfect/image_4.png" width="900">
+  <img src="images/image_to_text/perfect/image_4.png" width="900">
 </p>
 
-### Partially correct case
+**Partially correct case**
 
 <p align="center">
-  <img src="images/image-to-text/partial/image_0.png" width="900">
+  <img src="images/image_to_text/partial/image_0.png" width="900">
 </p>
 
 Qualitative evaluation helps identify cases where the model retrieves semantically related images even when they do not exactly match the Flickr30K ground-truth annotation.
 
 ---
+## 🧩 Cross-Modal Similarity
+
+A cross-modal similarity matrix is used to visualize relationships between image and text embeddings.
+
+Each cell represents the cosine similarity between an image and a caption.
+
+<p align="center">
+  <img src="images/cross_modal_similarity_heatmap.png" width="900">
+</p>
+
+A strong diagonal structure indicates that matching image-caption pairs have high similarity.
+
+The visualization also demonstrates how CLIP aligns the two modalities within a shared embedding space.
+
+---
+
 
 
 
