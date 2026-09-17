@@ -131,7 +131,7 @@ In addition to numerical metrics, retrieved results are inspected visually.
   <img src="images/text_to_image/hard/caption_1.png" width="900">
 </p>
 
-### Image → Text Retrieval**
+### Image → Text Retrieval
 
 **Successful case**
 
@@ -164,6 +164,26 @@ The visualization also demonstrates how CLIP aligns the two modalities within a 
 
 ---
 
+## 🚧 Limitations
+
+- Fine-tuning was performed using only 5,000 training images
+- CLIP ViT-B/32 is relatively small compared with newer vision-language models
+- Flickr30K contains a limited range of visual concepts and language descriptions
+- Recall-based evaluation uses the Flickr30K annotations as ground truth, so semantically correct but unannotated results can be counted as incorrect
+- Qualitative retrieval can reveal semantic matches that are not captured by the exact ground-truth evaluation
+
+## 🔮 Future Work
+
+- Fine-tuning on the full Flickr30K training set
+- Experimenting with larger CLIP models
+- Comparing different vision-language models
+- Hyperparameter optimization
+- More advanced contrastive-learning strategies
+- Zero-shot image classification experiments
+- Image caption generation
+- Visual Question Answering (VQA)
+- Evaluation on additional image-text datasets
+- Improving retrieval speed for larger databases
 
 
 
