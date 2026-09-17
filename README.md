@@ -16,7 +16,16 @@ Try the fine-tuned model interactively:
 The demo supports:
 
 - **Text → Image retrieval**
+
+<p align="center">
+  <img src="images/text_to_image.png" width="900">
+</p>
+
 - **Image → Text retrieval**
+
+<p align="center">
+  <img src="images/image_to_text.png" width="900">
+</p>
 
 The retrieval database contains a subset of the Flickr30K test set included with the demo.
 
