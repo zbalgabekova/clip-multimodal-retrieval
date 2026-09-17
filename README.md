@@ -10,7 +10,7 @@ The project includes baseline evaluation, contrastive fine-tuning, retrieval met
 Try the fine-tuned model interactively:
 
 **Hugging Face Spaces:**  
-`zaremabalgabekova/clip-flickr30k-retrieval`
+[clip-flickr30k-retrieval](https://huggingface.co/spaces/zaremabalgabekova/clip-flickr30k-retrieval)
 
 The demo supports:
 
